@@ -1,0 +1,24 @@
+1. Create a separate page for creating new Todos
+    -newTodos.ejs
+    -Move new todo form to newTodos.ejs
+    -button on homepage to take us to new page
+        <a href="./newTodo"><button>Create a new to do!</button></a>
+    -GET endpoint to display newTodos.ejs
+        Routes > 
+            router.get("/newTodo", newTodoPage)
+    -Implement functionality for button
+        const newTodoPage = (req, res) =>{
+            res.render('newTodo.ejs')
+            }
+
+2. Create a detailed page for each todo
+    -Add functionality to click a todo and see details of that todo. 
+    -Modify list of todos to include anchor tags
+    -Create a new route with the ID of the todo that will 
+    -Create a controller for that route that will fetch 
+        the specific todo and pass that data on to another ejs file
+    -Create the todoDetail.ejs file and display the todo
+
+3. Create a delete button to remove a todo
+
+4. Create a navbar to navigate between pages

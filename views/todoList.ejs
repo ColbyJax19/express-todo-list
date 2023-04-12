@@ -12,14 +12,15 @@
     
     <ul>
         <% for (let t of todoData){ %>
-            <li><%= t.todo %></li>
+            <li>
+                <a href="/todo/<%= t._id %>">    <%= t.todo %>  </a>
+            
+            </li>   
        <% } %>
     </ul>
 
-    <form method="post" action="/createToDo">
-        <input name="toDoItem" id="toDoItem" type="text">
-        <button type="submit">Add a new to do</button>
-    </form>
+    <a href="./newTodo"><button>Create a new to do!</button></a>
+
 
 </body>
 </html>
